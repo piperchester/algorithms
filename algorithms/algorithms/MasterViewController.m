@@ -35,7 +35,7 @@
     
     if (!sorts) {
         sorts = [[NSMutableArray alloc] init];
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i < sortsArray.count; i++){
             [sorts insertObject:sortsArray[i] atIndex:i];
             NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
             [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
