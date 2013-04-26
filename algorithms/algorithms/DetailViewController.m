@@ -31,12 +31,13 @@
     }        
 }
 
+/**
+ * Updates the user interface for the detail item.
+ */
 - (void)configureView
 {
-    // Update the user interface for the detail item.
-
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.title = [self.detailItem description];
     }
 }
 
@@ -45,6 +46,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
+//    self.title = @"Bubble Sort";
 }
 
 - (void)didReceiveMemoryWarning
