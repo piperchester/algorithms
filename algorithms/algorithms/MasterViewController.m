@@ -33,9 +33,6 @@
     NSString *sortsPlistPath = [[NSBundle mainBundle] pathForResource:@"sorts" ofType:@"plist"];
     NSArray *sortsArray = [NSArray arrayWithContentsOfFile:sortsPlistPath];
     
-    NSString *averagePlistPath = [[NSBundle mainBundle] pathForResource:@"average" ofType:@"plist"];
-    NSDictionary *averageDictionary = [NSArray arrayWithContentsOfFile:averagePlistPath];
-    
     if (!sorts) {
         sorts = [[NSMutableArray alloc] init];
         for (int i = 0; i < sortsArray.count; i++){

@@ -13,7 +13,9 @@
 - (void)configureView;
 @end
 
-@implementation DetailViewController
+@implementation DetailViewController{
+    UITextView* averageText;
+}
 
 #pragma mark - Managing the detail item
 
@@ -39,15 +41,30 @@
     if (self.detailItem) {
         self.title = [self.detailItem description];
     }
+    
+    averageText = [[UITextView alloc] initWithFrame:CGRectMake(100, 165, 140, 50)];
+    [averageText setBackgroundColor:[UIColor clearColor]];
+    [averageText setFont:[UIFont boldSystemFontOfSize:60]];
+    averageText.editable = NO;
+    averageText.scrollEnabled = NO;
+    averageText.allowsEditingTextAttributes = NO;
+    
+    NSString *averagePlistPath = [[NSBundle mainBundle] pathForResource:@"average" ofType:@"plist"];
+    NSDictionary *averageDictionary = [NSDictionary dictionaryWithContentsOfFile:averagePlistPath];
+    averageText.text = [averageDictionary objectForKey:@"bubble"];
+    [[self view] addSubview:averageText];
+    
+    CGRect frame = averageText.frame;
+    frame.size.height = averageText.contentSize.height;
+    frame.size.width = averageText.contentSize.width;
+    averageText.frame = frame;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
     
-//    self.title = @"Bubble Sort";
+    [self configureView];
 }
 
 - (void)didReceiveMemoryWarning
