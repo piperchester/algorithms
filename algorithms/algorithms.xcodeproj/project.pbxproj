@@ -22,6 +22,8 @@
 		2C4D8ED71724C3A80033412F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D8ED61724C3A80033412F /* DetailViewController.m */; };
 		2C4D8EDE1724F3D90033412F /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C4D8EDD1724F3D90033412F /* sorts.plist */; };
 		2C4DBA0B17306F2200AC30FF /* average.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C4DBA0A17306F2200AC30FF /* average.plist */; };
+		2CBD21661730AB6C008916ED /* best.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD21651730AB6C008916ED /* best.plist */; };
+		2CBD21681730AB7A008916ED /* worst.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD21671730AB7A008916ED /* worst.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		2C4D8ED61724C3A80033412F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2C4D8EDD1724F3D90033412F /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
 		2C4DBA0A17306F2200AC30FF /* average.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = average.plist; sourceTree = "<group>"; };
+		2CBD21651730AB6C008916ED /* best.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = best.plist; sourceTree = "<group>"; };
+		2CBD21671730AB7A008916ED /* worst.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = worst.plist; path = ../worst.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 		2C4D8EBB1724C3A80033412F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2CBD21671730AB7A008916ED /* worst.plist */,
+				2CBD21651730AB6C008916ED /* best.plist */,
 				2C4D8EBC1724C3A80033412F /* algorithms-Info.plist */,
 				2C4D8EBD1724C3A80033412F /* InfoPlist.strings */,
 				2C4D8EC01724C3A80033412F /* main.m */,
@@ -180,6 +186,8 @@
 				2C4D8ED11724C3A80033412F /* MainStoryboard_iPad.storyboard in Resources */,
 				2C4D8EDE1724F3D90033412F /* sorts.plist in Resources */,
 				2C4DBA0B17306F2200AC30FF /* average.plist in Resources */,
+				2CBD21661730AB6C008916ED /* best.plist in Resources */,
+				2CBD21681730AB7A008916ED /* worst.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
