@@ -2,25 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>bubble</key>
+	<key>Bubble Sort</key>
 	<string>n^2</string>
-	<key>selection</key>
+	<key>Selection Sort</key>
 	<string>n^2</string>
-	<key>insertion</key>
+	<key>Insertion Sort</key>
 	<string>n^2</string>
-	<key>merge</key>
+	<key>Merge Sort</key>
 	<string>nlog(n)</string>
-	<key>heap</key>
+	<key>Heap Sort</key>
 	<string>nlog(n)</string>
-	<key>radix</key>
+	<key>Radix Sort</key>
 	<string>kn</string>
-	<key>quick</key>
+	<key>Quick Sort</key>
 	<string>nlog(n)</string>
-	<key>shell</key>
+	<key>Shell Sort</key>
 	<string>n(log(n)^2)</string>
-	<key>intro</key>
+	<key>Intro Sort</key>
 	<string>nlog(n)</string>
-	<key>bogo</key>
+	<key>Bogo Sort</key>
 	<string>nn!</string>
 </dict>
 </plist>

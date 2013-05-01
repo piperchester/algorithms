@@ -54,32 +54,32 @@
     NSDictionary *worstDictionary = [NSDictionary dictionaryWithContentsOfFile:worstPlistPath];
     
    
-    bestText = [[UITextView alloc] initWithFrame:CGRectMake(100, 50, 140, 50)];
+    bestText = [[UITextView alloc] initWithFrame:CGRectMake(10, 50, 350, 50)];
     [bestText setBackgroundColor:[UIColor clearColor]];
-    [bestText setFont:[UIFont boldSystemFontOfSize:60]];
+    [bestText setFont:[UIFont boldSystemFontOfSize:55]];
     bestText.editable = NO;
     bestText.scrollEnabled = NO;
     bestText.allowsEditingTextAttributes = NO;
-    bestText.text = [bestDictionary objectForKey:@"bubble"];
+    bestText.text = [bestDictionary objectForKey:[self.detailItem description]];
     [[self view] addSubview:bestText];
     
     
-    averageText = [[UITextView alloc] initWithFrame:CGRectMake(100, 165, 140, 50)];
+    averageText = [[UITextView alloc] initWithFrame:CGRectMake(10, 165, 350, 50)];
     [averageText setBackgroundColor:[UIColor clearColor]];
-    [averageText setFont:[UIFont boldSystemFontOfSize:60]];
+    [averageText setFont:[UIFont boldSystemFontOfSize:55]];
     averageText.editable = NO;
     averageText.scrollEnabled = NO;
     averageText.allowsEditingTextAttributes = NO;
-    averageText.text = [averageDictionary objectForKey:@"bubble"];
+    averageText.text = [averageDictionary objectForKey:[self.detailItem description]];
     [[self view] addSubview:averageText];
     
-    worstText = [[UITextView alloc] initWithFrame:CGRectMake(100, 300, 140, 0)];
+    worstText = [[UITextView alloc] initWithFrame:CGRectMake(10, 300, 350, 0)];
     [worstText setBackgroundColor:[UIColor clearColor]];
-    [worstText setFont:[UIFont boldSystemFontOfSize:60]];
+    [worstText setFont:[UIFont boldSystemFontOfSize:55]];
     worstText.editable = NO;
     worstText.scrollEnabled = NO;
     worstText.allowsEditingTextAttributes = NO;
-    worstText.text = [worstDictionary objectForKey:@"bubble"];
+    worstText.text = [worstDictionary objectForKey:[self.detailItem description]];
     [[self view] addSubview:worstText];
     
     CGRect frame = bestText.frame;
