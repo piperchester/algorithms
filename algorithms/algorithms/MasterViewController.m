@@ -30,8 +30,8 @@
 {
     [super viewDidLoad];
     
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"sorts" ofType:@"plist"];
-    NSArray *sortsArray = [NSArray arrayWithContentsOfFile:plistPath];
+    NSString *sortsPlistPath = [[NSBundle mainBundle] pathForResource:@"sorts" ofType:@"plist"];
+    NSArray *sortsArray = [NSArray arrayWithContentsOfFile:sortsPlistPath];
     
     if (!sorts) {
         sorts = [[NSMutableArray alloc] init];

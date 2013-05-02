@@ -8,9 +8,9 @@
 	<string>Quick Sort</string>
 	<string>Merge Sort</string>
 	<string>Heap Sort</string>
-	<string>Introsort</string>
+	<string>Intro Sort</string>
 	<string>Shell Sort</string>
-	<string>Bogosort</string>
+	<string>Bogo Sort</string>
 	<string>Radix Sort</string>
 </array>
 </plist>
