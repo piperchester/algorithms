@@ -54,7 +54,7 @@
     NSDictionary *worstDictionary = [NSDictionary dictionaryWithContentsOfFile:worstPlistPath];
     
    
-    bestText = [[UITextView alloc] initWithFrame:CGRectMake(10, 50, 350, 50)];
+    bestText = [[UITextView alloc] initWithFrame:CGRectMake(10, 20, 350, 50)];
     [bestText setBackgroundColor:[UIColor clearColor]];
     [bestText setFont:[UIFont boldSystemFontOfSize:55]];
     bestText.editable = NO;
@@ -64,7 +64,7 @@
     [[self view] addSubview:bestText];
     
     
-    averageText = [[UITextView alloc] initWithFrame:CGRectMake(10, 165, 350, 50)];
+    averageText = [[UITextView alloc] initWithFrame:CGRectMake(10, 140, 350, 50)];
     [averageText setBackgroundColor:[UIColor clearColor]];
     [averageText setFont:[UIFont boldSystemFontOfSize:55]];
     averageText.editable = NO;
@@ -73,7 +73,7 @@
     averageText.text = [averageDictionary objectForKey:[self.detailItem description]];
     [[self view] addSubview:averageText];
     
-    worstText = [[UITextView alloc] initWithFrame:CGRectMake(10, 300, 350, 0)];
+    worstText = [[UITextView alloc] initWithFrame:CGRectMake(10, 270, 350, 0)];
     [worstText setBackgroundColor:[UIColor clearColor]];
     [worstText setFont:[UIFont boldSystemFontOfSize:55]];
     worstText.editable = NO;
@@ -97,14 +97,11 @@
     frame.size.height = worstText.contentSize.height;
     frame.size.width = worstText.contentSize.width;
     worstText.frame = frame;
-    
-
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     [self configureView];
 }
 

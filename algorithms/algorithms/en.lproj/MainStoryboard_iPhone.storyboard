@@ -71,41 +71,19 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Best" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFe-8A-rTX">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="29" id="blb-JA-c4I"/>
-                                    <constraint firstAttribute="height" constant="21" id="xP3-Kl-ctc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Average" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wst-xQ-WNZ">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="crM-2s-6Fs"/>
-                                    <constraint firstAttribute="width" constant="52" id="qLJ-dh-MUU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Worst" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzL-PQ-CoT">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="37" id="Pv0-uW-AbB"/>
-                                    <constraint firstAttribute="height" constant="21" id="yWY-t2-M0L"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="436-xa-nTp">
+                                <segments>
+                                    <segment title="Best"/>
+                                    <segment title="Average"/>
+                                    <segment title="Worst"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BFe-8A-rTX" firstAttribute="centerX" secondItem="wst-xQ-WNZ" secondAttribute="centerX" type="default" id="AgH-Zv-oBg"/>
-                            <constraint firstAttribute="bottom" secondItem="PzL-PQ-CoT" secondAttribute="bottom" constant="127" id="TQu-Qg-0Ck"/>
-                            <constraint firstItem="BFe-8A-rTX" firstAttribute="centerX" secondItem="22" secondAttribute="centerX" type="default" id="dUC-xE-J4K"/>
-                            <constraint firstItem="BFe-8A-rTX" firstAttribute="top" secondItem="22" secondAttribute="top" constant="20" symbolic="YES" type="default" id="mUC-Sl-NHQ"/>
-                            <constraint firstItem="wst-xQ-WNZ" firstAttribute="top" secondItem="22" secondAttribute="top" constant="149" id="uaK-fg-J2h"/>
-                            <constraint firstItem="wst-xQ-WNZ" firstAttribute="centerX" secondItem="PzL-PQ-CoT" secondAttribute="centerX" type="default" id="vnj-a1-w3q"/>
+                            <constraint firstItem="436-xa-nTp" firstAttribute="leading" secondItem="22" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Lnj-u8-XGs"/>
+                            <constraint firstAttribute="bottom" secondItem="436-xa-nTp" secondAttribute="bottom" constant="10" id="pIS-5T-i6b"/>
+                            <constraint firstAttribute="trailing" secondItem="436-xa-nTp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zhh-ds-6Fq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sort" id="26"/>
