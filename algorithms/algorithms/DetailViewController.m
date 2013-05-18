@@ -57,6 +57,7 @@
     bestText = [[UITextView alloc] initWithFrame:CGRectMake(10, 20, 350, 50)];
     [bestText setBackgroundColor:[UIColor clearColor]];
     [bestText setFont:[UIFont boldSystemFontOfSize:55]];
+    bestText.textColor = [UIColor colorWithRed:0 green:.6 blue:0 alpha:1];
     bestText.editable = NO;
     bestText.scrollEnabled = NO;
     bestText.allowsEditingTextAttributes = NO;
@@ -66,7 +67,8 @@
     
     averageText = [[UITextView alloc] initWithFrame:CGRectMake(10, 140, 350, 50)];
     [averageText setBackgroundColor:[UIColor clearColor]];
-    [averageText setFont:[UIFont boldSystemFontOfSize:55]];
+   [averageText setFont:[UIFont boldSystemFontOfSize:55]];
+    averageText.textColor = [UIColor colorWithRed:.2 green:.3 blue:0 alpha:1];
     averageText.editable = NO;
     averageText.scrollEnabled = NO;
     averageText.allowsEditingTextAttributes = NO;
@@ -76,6 +78,7 @@
     worstText = [[UITextView alloc] initWithFrame:CGRectMake(10, 270, 350, 0)];
     [worstText setBackgroundColor:[UIColor clearColor]];
     [worstText setFont:[UIFont boldSystemFontOfSize:55]];
+    worstText.textColor = [UIColor colorWithRed:.4 green:.1 blue:0 alpha:1];
     worstText.editable = NO;
     worstText.scrollEnabled = NO;
     worstText.allowsEditingTextAttributes = NO;
