@@ -51,14 +51,17 @@
     NSString *worstPlistPath = [[NSBundle mainBundle] pathForResource:@"worst" ofType:@"plist"];
     worstDictionary = [NSDictionary dictionaryWithContentsOfFile:worstPlistPath];
     
-    runtimeText = [[UITextView alloc] initWithFrame:CGRectMake(10, 140, 350, 50)];
+    runtimeText = [[UITextView alloc] initWithFrame:CGRectMake(0, 140, 320, 50)];
     [runtimeText setBackgroundColor:[UIColor clearColor]];
-   [runtimeText setFont:[UIFont boldSystemFontOfSize:55]];
+   [runtimeText setFont:[UIFont boldSystemFontOfSize:75]];
     runtimeText.textColor = [UIColor colorWithRed:.2 green:.3 blue:0 alpha:1];
     runtimeText.editable = NO;
     runtimeText.scrollEnabled = NO;
     runtimeText.allowsEditingTextAttributes = NO;
     runtimeText.text = [averageDictionary objectForKey:[self.detailItem description]];
+    runtimeText.hidden = true;
+
+    runtimeText.textAlignment = NSTextAlignmentCenter;
     [[self view] addSubview:runtimeText];
     
     CGRect frame = runtimeText.frame;
@@ -102,12 +105,16 @@
 
 
 - (IBAction)changeRuntime:(id)sender {
+    runtimeText.hidden = false;
     if (((UISegmentedControl *)sender).selectedSegmentIndex == 0){
         runtimeText.text = [bestDictionary objectForKey:[self.detailItem description]];
+        runtimeText.textColor = [UIColor colorWithRed:.2 green:.4 blue:0 alpha:1];
     }else if (((UISegmentedControl *)sender).selectedSegmentIndex == 1){
         runtimeText.text = [averageDictionary objectForKey:[self.detailItem description]];
+        runtimeText.textColor = [UIColor colorWithRed:.4 green:.2 blue:0 alpha:1];
     }else{
         runtimeText.text = [worstDictionary objectForKey:[self.detailItem description]];
+        runtimeText.textColor = [UIColor colorWithRed:.6 green:0 blue:0 alpha:1];
     }
 }
 @end
