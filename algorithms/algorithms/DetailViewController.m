@@ -14,9 +14,10 @@
 @end
 
 @implementation DetailViewController{
-    UITextView* averageText;
-    UITextView* bestText;
-    UITextView* worstText;
+    UITextView* runtimeText;
+    NSDictionary* averageDictionary;
+    NSDictionary* bestDictionary;
+    NSDictionary* worstDictionary;
 }
 
 #pragma mark - Managing the detail item
@@ -35,9 +36,6 @@
     }        
 }
 
-/**
- * Updates the user interface for the detail item.
- */
 - (void)configureView
 {
     if (self.detailItem) {
@@ -45,61 +43,33 @@
     }
     
     NSString *averagePlistPath = [[NSBundle mainBundle] pathForResource:@"average" ofType:@"plist"];
-    NSDictionary *averageDictionary = [NSDictionary dictionaryWithContentsOfFile:averagePlistPath];
+    averageDictionary = [NSDictionary dictionaryWithContentsOfFile:averagePlistPath];
     
     NSString *bestPlistPath = [[NSBundle mainBundle] pathForResource:@"best" ofType:@"plist"];
-    NSDictionary *bestDictionary = [NSDictionary dictionaryWithContentsOfFile:bestPlistPath];
+    bestDictionary = [NSDictionary dictionaryWithContentsOfFile:bestPlistPath];
     
     NSString *worstPlistPath = [[NSBundle mainBundle] pathForResource:@"worst" ofType:@"plist"];
-    NSDictionary *worstDictionary = [NSDictionary dictionaryWithContentsOfFile:worstPlistPath];
+    worstDictionary = [NSDictionary dictionaryWithContentsOfFile:worstPlistPath];
     
-   
-    bestText = [[UITextView alloc] initWithFrame:CGRectMake(10, 20, 350, 50)];
-    [bestText setBackgroundColor:[UIColor clearColor]];
-    [bestText setFont:[UIFont boldSystemFontOfSize:55]];
-    bestText.textColor = [UIColor colorWithRed:0 green:.6 blue:0 alpha:1];
-    bestText.editable = NO;
-    bestText.scrollEnabled = NO;
-    bestText.allowsEditingTextAttributes = NO;
-    bestText.text = [bestDictionary objectForKey:[self.detailItem description]];
-    [[self view] addSubview:bestText];
+    runtimeText = [[UITextView alloc] initWithFrame:CGRectMake(10, 140, 350, 50)];
+    [runtimeText setBackgroundColor:[UIColor clearColor]];
+   [runtimeText setFont:[UIFont boldSystemFontOfSize:55]];
+    runtimeText.textColor = [UIColor colorWithRed:.2 green:.3 blue:0 alpha:1];
+    runtimeText.editable = NO;
+    runtimeText.scrollEnabled = NO;
+    runtimeText.allowsEditingTextAttributes = NO;
+    runtimeText.text = [averageDictionary objectForKey:[self.detailItem description]];
+    [[self view] addSubview:runtimeText];
     
+    CGRect frame = runtimeText.frame;
+    frame.size.height = runtimeText.contentSize.height;
+    frame.size.width = runtimeText.contentSize.width;
+    runtimeText.frame = frame;
     
-    averageText = [[UITextView alloc] initWithFrame:CGRectMake(10, 140, 350, 50)];
-    [averageText setBackgroundColor:[UIColor clearColor]];
-   [averageText setFont:[UIFont boldSystemFontOfSize:55]];
-    averageText.textColor = [UIColor colorWithRed:.2 green:.3 blue:0 alpha:1];
-    averageText.editable = NO;
-    averageText.scrollEnabled = NO;
-    averageText.allowsEditingTextAttributes = NO;
-    averageText.text = [averageDictionary objectForKey:[self.detailItem description]];
-    [[self view] addSubview:averageText];
-    
-    worstText = [[UITextView alloc] initWithFrame:CGRectMake(10, 270, 350, 0)];
-    [worstText setBackgroundColor:[UIColor clearColor]];
-    [worstText setFont:[UIFont boldSystemFontOfSize:55]];
-    worstText.textColor = [UIColor colorWithRed:.4 green:.1 blue:0 alpha:1];
-    worstText.editable = NO;
-    worstText.scrollEnabled = NO;
-    worstText.allowsEditingTextAttributes = NO;
-    worstText.text = [worstDictionary objectForKey:[self.detailItem description]];
-    [[self view] addSubview:worstText];
-    
-    CGRect frame = bestText.frame;
-    frame.size.height = bestText.contentSize.height;
-    frame.size.width = bestText.contentSize.width;
-    bestText.frame = frame;
-    
-    frame = averageText.frame;
-    frame.size.height = averageText.contentSize.height;
-    frame.size.width = averageText.contentSize.width;
-    averageText.frame = frame;
-    
-    
-    frame = worstText.frame;
-    frame.size.height = worstText.contentSize.height;
-    frame.size.width = worstText.contentSize.width;
-    worstText.frame = frame;
+    frame = runtimeText.frame;
+    frame.size.height = runtimeText.contentSize.height;
+    frame.size.width = runtimeText.contentSize.width;
+    runtimeText.frame = frame;
 }
 
 - (void)viewDidLoad
@@ -130,4 +100,14 @@
     self.masterPopoverController = nil;
 }
 
+
+- (IBAction)changeRuntime:(id)sender {
+    if (((UISegmentedControl *)sender).selectedSegmentIndex == 0){
+        runtimeText.text = [bestDictionary objectForKey:[self.detailItem description]];
+    }else if (((UISegmentedControl *)sender).selectedSegmentIndex == 1){
+        runtimeText.text = [averageDictionary objectForKey:[self.detailItem description]];
+    }else{
+        runtimeText.text = [worstDictionary objectForKey:[self.detailItem description]];
+    }
+}
 @end

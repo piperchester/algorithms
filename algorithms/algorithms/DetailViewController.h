@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) id detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+- (IBAction)changeRuntime:(id)sender;
 
 @end
