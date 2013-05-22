@@ -16,8 +16,8 @@
 	<string>nlog(n)</string>
 	<key>Radix</key>
 	<string>kn</string>
-	<key>Bogo</key>
-	<string>n^n</string>
+	<key>Bucket</key>
+	<string>n^2</string>
 	<key>Shell</key>
 	<string>n(log(n)^2)</string>
 	<key>Heap</key>

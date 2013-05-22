@@ -4,8 +4,8 @@
 <dict>
 	<key>Merge</key>
 	<string>nlog(n)</string>
-	<key>Bogo</key>
-	<string>1</string>
+	<key>Bucket</key>
+	<string>n+k</string>
 	<key>Quick</key>
 	<string>nlog(n)</string>
 	<key>Intro</key>

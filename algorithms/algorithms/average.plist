@@ -20,7 +20,7 @@
 	<string>n(log(n)^2)</string>
 	<key>Intro</key>
 	<string>nlog(n)</string>
-	<key>Bogo</key>
-	<string>nn!</string>
+	<key>Bucket</key>
+	<string>n+k</string>
 </dict>
 </plist>
