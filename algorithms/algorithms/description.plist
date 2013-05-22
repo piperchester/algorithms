@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Bubble</key>
+	<string>Bubbles up through the search. Slow.</string>
+	<key>Bucket</key>
+	<string></string>
+	<key>Radix</key>
+	<string></string>
+	<key>Heap</key>
+	<string></string>
+	<key>Merge</key>
+	<string>Recursively divides the data set and sorts the sub-arrays before merging them back in one at a time.</string>
+	<key>Insertion</key>
+	<string></string>
+	<key>Selection</key>
+	<string>Scans the entire data set.</string>
+	<key>Intro</key>
+	<string></string>
+	<key>Quick</key>
+	<string>Also known as partition-exchange sort. Continually creates pivots and sorts either halves.</string>
+</dict>
+</plist>

@@ -15,10 +15,12 @@
 
 @implementation DetailViewController{
     UITextView* runtimeText;
+    UITextView* descriptionText;
     NSDictionary* averageDictionary;
     NSDictionary* bestDictionary;
     NSDictionary* worstDictionary;
     NSDictionary* spaceDictionary;
+    NSDictionary* descriptionDictionary;
 }
 
 #pragma mark - Managing the detail item
@@ -55,6 +57,9 @@
     NSString *spacePlistPath = [[NSBundle mainBundle] pathForResource:@"space" ofType:@"plist"];
     spaceDictionary = [NSDictionary dictionaryWithContentsOfFile:spacePlistPath];
     
+    NSString *descriptionPlistPath = [[NSBundle mainBundle] pathForResource:@"description" ofType:@"plist"];
+    descriptionDictionary = [NSDictionary dictionaryWithContentsOfFile:descriptionPlistPath];
+    
     runtimeText = [[UITextView alloc] initWithFrame:CGRectMake(0, 140, 320, 50)];
     [runtimeText setBackgroundColor:[UIColor clearColor]];
    [runtimeText setFont:[UIFont boldSystemFontOfSize:75]];
@@ -68,21 +73,34 @@
     runtimeText.textAlignment = NSTextAlignmentCenter;
     [[self view] addSubview:runtimeText];
     
-    CGRect frame = runtimeText.frame;
-    frame.size.height = runtimeText.contentSize.height;
-    frame.size.width = runtimeText.contentSize.width;
-    runtimeText.frame = frame;
+    descriptionText = [[UITextView alloc] initWithFrame:CGRectMake(0, 40, 320, 50)];
+    [descriptionText setBackgroundColor:[UIColor clearColor]];
+    [descriptionText setFont:[UIFont boldSystemFontOfSize:20]];
+        descriptionText.editable = NO;
+        descriptionText.scrollEnabled = NO;
+        descriptionText.allowsEditingTextAttributes = NO;
+        descriptionText.text = [descriptionDictionary objectForKey:[self.detailItem description]];
+        descriptionText.hidden = false;
     
-    frame = runtimeText.frame;
-    frame.size.height = runtimeText.contentSize.height;
-    frame.size.width = runtimeText.contentSize.width;
-    runtimeText.frame = frame;
-}
+    descriptionText.textAlignment = NSTextAlignmentCenter;
+    [[self view] addSubview:descriptionText];
+    
+    CGRect runtimeFrame = runtimeText.frame;
+    runtimeFrame.size.height = runtimeText.contentSize.height;
+    runtimeFrame.size.width = runtimeText.contentSize.width;
+    runtimeText.frame = runtimeFrame;
+    
+    CGRect descriptionFrame = descriptionText.frame;
+    descriptionFrame.size.height = descriptionText.contentSize.height;
+    descriptionFrame.size.width = descriptionText.contentSize.width;
+    descriptionText.frame = descriptionFrame;}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self configureView];
+    
+    descriptionText.text = [descriptionDictionary objectForKey:[self.detailItem description]];
 }
 
 - (void)didReceiveMemoryWarning
