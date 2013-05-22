@@ -73,9 +73,9 @@
     runtimeText.textAlignment = NSTextAlignmentCenter;
     [[self view] addSubview:runtimeText];
     
-    descriptionText = [[UITextView alloc] initWithFrame:CGRectMake(0, 40, 320, 50)];
+    descriptionText = [[UITextView alloc] initWithFrame:CGRectMake(0, 20, 320, 50)];
     [descriptionText setBackgroundColor:[UIColor clearColor]];
-    [descriptionText setFont:[UIFont boldSystemFontOfSize:20]];
+    [descriptionText setFont:[UIFont systemFontOfSize:20]];
         descriptionText.editable = NO;
         descriptionText.scrollEnabled = NO;
         descriptionText.allowsEditingTextAttributes = NO;

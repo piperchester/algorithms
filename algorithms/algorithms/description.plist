@@ -3,22 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>Bubble</key>
-	<string>Bubbles up through the search. Slow.</string>
+	<string>Repeatedly steps through the list comparing and swapping adjacent items if need be.</string>
 	<key>Bucket</key>
-	<string></string>
+	<string>Partitions an array into a number of buckets. Can recursively apply bucket sort or use a different sort on the buckets.</string>
 	<key>Radix</key>
-	<string></string>
+	<string>Takes the least significant digits of the value to be sorted, then sorts the list of elements based on the digit.</string>
 	<key>Heap</key>
-	<string></string>
+	<string>First, the sort constructs a heap of the data. Then, the largest element is removed from the heap and inserted into a sorted array</string>
 	<key>Merge</key>
 	<string>Recursively divides the data set and sorts the sub-arrays before merging them back in one at a time.</string>
 	<key>Insertion</key>
-	<string></string>
+	<string>Iterates through the data set one-by-one and checks against previous entries.</string>
 	<key>Selection</key>
 	<string>Scans the entire data set.</string>
 	<key>Intro</key>
-	<string></string>
+	<string>Combines quick sort and heap sort.</string>
 	<key>Quick</key>
 	<string>Also known as partition-exchange sort. Continually creates pivots and sorts either halves.</string>
+	<key>Shell</key>
+	<string>Similar to insertion sort, but comparable elements are separated by a gap sequence.</string>
 </dict>
 </plist>

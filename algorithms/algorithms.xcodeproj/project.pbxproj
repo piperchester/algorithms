@@ -112,7 +112,6 @@
 				2C4D8ED31724C3A80033412F /* MasterViewController.m */,
 				2C4D8ED51724C3A80033412F /* DetailViewController.h */,
 				2C4D8ED61724C3A80033412F /* DetailViewController.m */,
-				2CDECCF1174C83EA004E2CC7 /* description.plist */,
 				2C4D8EBB1724C3A80033412F /* Supporting Files */,
 			);
 			path = algorithms;
@@ -121,6 +120,7 @@
 		2C4D8EBB1724C3A80033412F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2CDECCF1174C83EA004E2CC7 /* description.plist */,
 				2C5195A81749385E00B95DD7 /* icon_114.png */,
 				2C5195A61749385200B95DD7 /* icon_57.png */,
 				2CBD21671730AB7A008916ED /* worst.plist */,
