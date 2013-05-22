@@ -18,6 +18,7 @@
     NSDictionary* averageDictionary;
     NSDictionary* bestDictionary;
     NSDictionary* worstDictionary;
+    NSDictionary* spaceDictionary;
 }
 
 #pragma mark - Managing the detail item
@@ -50,6 +51,9 @@
     
     NSString *worstPlistPath = [[NSBundle mainBundle] pathForResource:@"worst" ofType:@"plist"];
     worstDictionary = [NSDictionary dictionaryWithContentsOfFile:worstPlistPath];
+    
+    NSString *spacePlistPath = [[NSBundle mainBundle] pathForResource:@"space" ofType:@"plist"];
+    spaceDictionary = [NSDictionary dictionaryWithContentsOfFile:spacePlistPath];
     
     runtimeText = [[UITextView alloc] initWithFrame:CGRectMake(0, 140, 320, 50)];
     [runtimeText setBackgroundColor:[UIColor clearColor]];
@@ -112,9 +116,12 @@
     }else if (((UISegmentedControl *)sender).selectedSegmentIndex == 1){
         runtimeText.text = [averageDictionary objectForKey:[self.detailItem description]];
         runtimeText.textColor = [UIColor colorWithRed:.4 green:.2 blue:0 alpha:1];
-    }else{
+    }else if (((UISegmentedControl *)sender).selectedSegmentIndex == 2){
         runtimeText.text = [worstDictionary objectForKey:[self.detailItem description]];
         runtimeText.textColor = [UIColor colorWithRed:.6 green:0 blue:0 alpha:1];
+    }else{
+        runtimeText.text = [spaceDictionary objectForKey:[self.detailItem description]];
+        runtimeText.textColor = [UIColor colorWithRed:.2 green:.4 blue:0 alpha:1];
     }
 }
 @end

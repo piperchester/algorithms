@@ -76,6 +76,7 @@
                                     <segment title="Best"/>
                                     <segment title="Average"/>
                                     <segment title="Worst"/>
+                                    <segment title="Size"/>
                                 </segments>
                                 <connections>
                                     <action selector="changeRuntime:" destination="21" eventType="valueChanged" id="G3O-Je-tCs"/>

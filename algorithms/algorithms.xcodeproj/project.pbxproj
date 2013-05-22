@@ -24,6 +24,7 @@
 		2C4DBA0B17306F2200AC30FF /* average.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C4DBA0A17306F2200AC30FF /* average.plist */; };
 		2C5195A71749385200B95DD7 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C5195A61749385200B95DD7 /* icon_57.png */; };
 		2C5195A91749385E00B95DD7 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C5195A81749385E00B95DD7 /* icon_114.png */; };
+		2C7CFF0E174C66310091862A /* space.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CFF0D174C66310091862A /* space.plist */; };
 		2CBD21661730AB6C008916ED /* best.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD21651730AB6C008916ED /* best.plist */; };
 		2CBD21681730AB7A008916ED /* worst.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD21671730AB7A008916ED /* worst.plist */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		2C4DBA0A17306F2200AC30FF /* average.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = average.plist; sourceTree = "<group>"; };
 		2C5195A61749385200B95DD7 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
 		2C5195A81749385E00B95DD7 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
+		2C7CFF0D174C66310091862A /* space.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = space.plist; sourceTree = "<group>"; };
 		2CBD21651730AB6C008916ED /* best.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = best.plist; sourceTree = "<group>"; };
 		2CBD21671730AB7A008916ED /* worst.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = worst.plist; path = ../worst.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 				2C4D8EC81724C3A80033412F /* Default@2x.png */,
 				2C4D8ECA1724C3A80033412F /* Default-568h@2x.png */,
 				2C4D8EDD1724F3D90033412F /* sorts.plist */,
+				2C7CFF0D174C66310091862A /* space.plist */,
 				2C4DBA0A17306F2200AC30FF /* average.plist */,
 			);
 			name = "Supporting Files";
@@ -196,6 +199,7 @@
 				2CBD21681730AB7A008916ED /* worst.plist in Resources */,
 				2C5195A71749385200B95DD7 /* icon_57.png in Resources */,
 				2C5195A91749385E00B95DD7 /* icon_114.png in Resources */,
+				2C7CFF0E174C66310091862A /* space.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

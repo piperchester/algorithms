@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Quick</key>
+	<string>log(n)</string>
+	<key>Selection</key>
+	<string>1</string>
+	<key>Insertion</key>
+	<string>1</string>
+	<key>Bubble</key>
+	<string>1</string>
+	<key>Bogo</key>
+	<string>z</string>
+	<key>Radix</key>
+	<string>n+k</string>
+	<key>Heap</key>
+	<string>1</string>
+	<key>Merge</key>
+	<string>n</string>
+	<key>Shell</key>
+	<string>1</string>
+	<key>Intro</key>
+	<string>z</string>
+</dict>
+</plist>
