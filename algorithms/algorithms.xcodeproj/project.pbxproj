@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2AE9B517576C240019DFCA /* NewRelicAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2AE9B417576C240019DFCA /* NewRelicAgent.framework */; };
+		2C2AE9B717576C760019DFCA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2AE9B617576C760019DFCA /* CoreTelephony.framework */; };
+		2C2AE9B917576C800019DFCA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2AE9B817576C800019DFCA /* SystemConfiguration.framework */; };
+		2C2AE9BB17576C8F0019DFCA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2AE9BA17576C8F0019DFCA /* libz.dylib */; };
 		2C4D8EB51724C3A70033412F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4D8EB41724C3A70033412F /* UIKit.framework */; };
 		2C4D8EB71724C3A70033412F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4D8EB61724C3A70033412F /* Foundation.framework */; };
 		2C4D8EB91724C3A70033412F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4D8EB81724C3A70033412F /* CoreGraphics.framework */; };
@@ -31,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C2AE9B417576C240019DFCA /* NewRelicAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NewRelicAgent.framework; sourceTree = "<group>"; };
+		2C2AE9B617576C760019DFCA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2C2AE9B817576C800019DFCA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2C2AE9BA17576C8F0019DFCA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2C4D8EB11724C3A70033412F /* algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4D8EB41724C3A70033412F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2C4D8EB61724C3A70033412F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,9 +73,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2AE9BB17576C8F0019DFCA /* libz.dylib in Frameworks */,
+				2C2AE9B917576C800019DFCA /* SystemConfiguration.framework in Frameworks */,
+				2C2AE9B717576C760019DFCA /* CoreTelephony.framework in Frameworks */,
 				2C4D8EB51724C3A70033412F /* UIKit.framework in Frameworks */,
 				2C4D8EB71724C3A70033412F /* Foundation.framework in Frameworks */,
 				2C4D8EB91724C3A70033412F /* CoreGraphics.framework in Frameworks */,
+				2C2AE9B517576C240019DFCA /* NewRelicAgent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +89,9 @@
 		2C4D8EA81724C3A70033412F = {
 			isa = PBXGroup;
 			children = (
+				2C2AE9BA17576C8F0019DFCA /* libz.dylib */,
+				2C2AE9B817576C800019DFCA /* SystemConfiguration.framework */,
+				2C2AE9B617576C760019DFCA /* CoreTelephony.framework */,
 				2C4D8EBA1724C3A70033412F /* algorithms */,
 				2C4D8EB31724C3A70033412F /* Frameworks */,
 				2C4D8EB21724C3A70033412F /* Products */,
@@ -94,6 +109,7 @@
 		2C4D8EB31724C3A70033412F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C2AE9B417576C240019DFCA /* NewRelicAgent.framework */,
 				2C4D8EB41724C3A70033412F /* UIKit.framework */,
 				2C4D8EB61724C3A70033412F /* Foundation.framework */,
 				2C4D8EB81724C3A70033412F /* CoreGraphics.framework */,
@@ -312,6 +328,10 @@
 		2C4D8EDB1724C3A80033412F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "algorithms/algorithms-Prefix.pch";
 				INFOPLIST_FILE = "algorithms/algorithms-Info.plist";
@@ -323,6 +343,10 @@
 		2C4D8EDC1724C3A80033412F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "algorithms/algorithms-Prefix.pch";
 				INFOPLIST_FILE = "algorithms/algorithms-Info.plist";
