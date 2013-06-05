@@ -7,7 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import <NewRelicAgent/NewRelicAgent.h>
+
+@interface AppDelegate()
+
+@property (nonatomic, strong) IBOutlet UITabBarController *myTabBarController;
+
+@end
 
 @implementation AppDelegate
 
@@ -19,8 +24,6 @@
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
-    
-    [NewRelicAgent startWithApplicationToken:@"AAd5dc0e02dbb085c2d35a8b884f895a4510dd3cb7"];
     
     return YES;
 }

@@ -100,6 +100,8 @@
     [super viewDidLoad];
     [self configureView];
     
+    self.hidesBottomBarWhenPushed = NO;
+    
     descriptionText.text = [descriptionDictionary objectForKey:[self.detailItem description]];
 }
 
