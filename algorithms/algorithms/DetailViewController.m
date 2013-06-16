@@ -13,24 +13,14 @@
 - (void)configureView;
 @end
 
-@implementation DetailViewController{
-    UITextView* runtimeText;
-    UITextView* descriptionText;
-    NSDictionary* averageDictionary;
-    NSDictionary* bestDictionary;
-    NSDictionary* worstDictionary;
-    NSDictionary* spaceDictionary;
-    NSDictionary* descriptionDictionary;
-}
+@implementation DetailViewController
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
-{
+- (void)setDetailItem:(id)newDetailItem {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
         
-        // Update the view.
         [self configureView];
     }
 
@@ -39,8 +29,7 @@
     }        
 }
 
-- (void)configureView
-{
+- (void)configureView {
     if (self.detailItem) {
         self.title = [self.detailItem description];
     }
@@ -95,8 +84,7 @@
     descriptionFrame.size.width = descriptionText.contentSize.width;
     descriptionText.frame = descriptionFrame;}
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     [self configureView];
     
@@ -105,23 +93,25 @@
     descriptionText.text = [descriptionDictionary objectForKey:[self.detailItem description]];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Split view
 
-- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
-{
+- (void)splitViewController:(UISplitViewController *)splitController willHideViewController
+                           :(UIViewController *)viewController withBarButtonItem
+                           :(UIBarButtonItem *)barButtonItem forPopoverController
+                           :(UIPopoverController *)popoverController {
     barButtonItem.title = NSLocalizedString(@"algorithms", @"algorithms");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
 }
 
-- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
-{
+- (void)splitViewController:(UISplitViewController *)splitController willShowViewController
+                           :(UIViewController *)viewController invalidatingBarButtonItem
+                           :(UIBarButtonItem *)barButtonItem {
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
