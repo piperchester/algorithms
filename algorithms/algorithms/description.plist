@@ -9,7 +9,7 @@
 	<key>Radix</key>
 	<string>Takes the least significant digits of the value to be sorted, then sorts the list of elements based on the digit.</string>
 	<key>Heap</key>
-	<string>First, the sort constructs a heap of the data. Then, the largest element is removed from the heap and inserted into a sorted array</string>
+	<string>First, the sort constructs a heap of the data. Then, the largest element is removed from the heap and inserted into a sorted array.</string>
 	<key>Merge</key>
 	<string>Recursively divides the data set and sorts the sub-arrays before merging them back in one at a time.</string>
 	<key>Insertion</key>
