@@ -22,5 +22,9 @@
 	<string>n</string>
 	<key>Selection</key>
 	<string>n^2</string>
+	<key>Binary Tree</key>
+	<string>n</string>
+	<key>Timsort</key>
+	<string>n</string>
 </dict>
 </plist>

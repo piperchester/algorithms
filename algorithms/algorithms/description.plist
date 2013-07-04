@@ -13,7 +13,7 @@
 	<key>Merge</key>
 	<string>Recursively divides the data set and sorts the sub-arrays before merging them back in one at a time.</string>
 	<key>Insertion</key>
-	<string>Iterates through the data set one-by-one and checks against previous entries.</string>
+	<string>Iterates through the data set one-by-one and checks against previous entries. Best for a nearly sorted data set.</string>
 	<key>Selection</key>
 	<string>Scans the entire data set.</string>
 	<key>Intro</key>
@@ -22,5 +22,9 @@
 	<string>Also known as partition-exchange sort. Continually creates pivots and sorts either halves.</string>
 	<key>Shell</key>
 	<string>Similar to insertion sort, but comparable elements are separated by a gap sequence.</string>
+	<key>Binary Tree</key>
+	<string>Builds BST from data set then traverses in-order to sort the keys. The BST removes the need for a temporary data structure.</string>
+	<key>Timsort</key>
+	<string>Python&apos;s standard sorting algorithm, Timsort searches for naturally occurring runs to process data. It combines insertion and merge sort.</string>
 </dict>
 </plist>

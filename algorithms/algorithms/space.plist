@@ -22,5 +22,9 @@
 	<string>1</string>
 	<key>Intro</key>
 	<string>z</string>
+	<key>Binary Tree</key>
+	<string>n</string>
+	<key>Timsort</key>
+	<string>n</string>
 </dict>
 </plist>

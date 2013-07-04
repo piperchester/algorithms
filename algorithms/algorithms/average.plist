@@ -22,5 +22,9 @@
 	<string>nlog(n)</string>
 	<key>Bucket</key>
 	<string>n+k</string>
+	<key>Binary Tree</key>
+	<string>nlog(n)</string>
+	<key>Timsort</key>
+	<string>nlog(n)</string>
 </dict>
 </plist>

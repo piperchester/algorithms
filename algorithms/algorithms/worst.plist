@@ -22,5 +22,9 @@
 	<string>n(log(n)^2)</string>
 	<key>Heap</key>
 	<string>nlog(n)</string>
+	<key>Binary Tree</key>
+	<string>nlog(n)</string>
+	<key>Timsort</key>
+	<string>nlog(n)</string>
 </dict>
 </plist>

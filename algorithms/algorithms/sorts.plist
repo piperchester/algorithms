@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
+	<string>Binary Tree</string>
 	<string>Bubble</string>
-	<string>Selection</string>
-	<string>Insertion</string>
-	<string>Quick</string>
-	<string>Merge</string>
-	<string>Heap</string>
-	<string>Intro</string>
-	<string>Shell</string>
 	<string>Bucket</string>
+	<string>Heap</string>
+	<string>Insertion</string>
+	<string>Intro</string>
+	<string>Merge</string>
+	<string>Quick</string>
 	<string>Radix</string>
+	<string>Selection</string>
+	<string>Shell</string>
+	<string>Timsort</string>
 </array>
 </plist>
