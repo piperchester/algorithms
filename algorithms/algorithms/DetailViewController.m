@@ -53,7 +53,6 @@
     runtimeText = [[UITextView alloc] initWithFrame:CGRectMake(0, 140, 320, 50)];
     [runtimeText setBackgroundColor:[UIColor clearColor]];
     [runtimeText setFont:[UIFont boldSystemFontOfSize:75]];
-    runtimeText.textColor = [UIColor colorWithRed:.2 green:.3 blue:0 alpha:1];
     runtimeText.editable = NO;
     runtimeText.scrollEnabled = NO;
     runtimeText.allowsEditingTextAttributes = NO;
@@ -123,16 +122,12 @@
     runtimeText.hidden = false;
     if (((UISegmentedControl *)sender).selectedSegmentIndex == 0){
         runtimeText.text = [bestDictionary objectForKey:[self.detailItem description]];
-        runtimeText.textColor = [UIColor colorWithRed:.2 green:.4 blue:0 alpha:1];
     } else if (((UISegmentedControl *)sender).selectedSegmentIndex == 1){
         runtimeText.text = [averageDictionary objectForKey:[self.detailItem description]];
-        runtimeText.textColor = [UIColor colorWithRed:.4 green:.2 blue:0 alpha:1];
     } else if (((UISegmentedControl *)sender).selectedSegmentIndex == 2){
         runtimeText.text = [worstDictionary objectForKey:[self.detailItem description]];
-        runtimeText.textColor = [UIColor colorWithRed:.6 green:0 blue:0 alpha:1];
     } else {
         runtimeText.text = [spaceDictionary objectForKey:[self.detailItem description]];
-        runtimeText.textColor = [UIColor colorWithRed:.2 green:.4 blue:0 alpha:1];
     }
 }
 @end

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C2AE9B717576C760019DFCA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2AE9B617576C760019DFCA /* CoreTelephony.framework */; };
 		2C2AE9B917576C800019DFCA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2AE9B817576C800019DFCA /* SystemConfiguration.framework */; };
 		2C2AE9BB17576C8F0019DFCA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2AE9BA17576C8F0019DFCA /* libz.dylib */; };
 		2C4D8EB51724C3A70033412F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4D8EB41724C3A70033412F /* UIKit.framework */; };
@@ -29,12 +28,11 @@
 		2C5195A91749385E00B95DD7 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C5195A81749385E00B95DD7 /* icon_114.png */; };
 		2C7CFF0E174C66310091862A /* space.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CFF0D174C66310091862A /* space.plist */; };
 		2CBD21661730AB6C008916ED /* best.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD21651730AB6C008916ED /* best.plist */; };
-		2CBD21681730AB7A008916ED /* worst.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD21671730AB7A008916ED /* worst.plist */; };
 		2CDECCF2174C83EA004E2CC7 /* description.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CDECCF1174C83EA004E2CC7 /* description.plist */; };
+		2CE7E07D177A93ED00EA1FAD /* worst.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE7E07C177A93ED00EA1FAD /* worst.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C2AE9B617576C760019DFCA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		2C2AE9B817576C800019DFCA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2C2AE9BA17576C8F0019DFCA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2C4D8EB11724C3A70033412F /* algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,8 +60,8 @@
 		2C5195A81749385E00B95DD7 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
 		2C7CFF0D174C66310091862A /* space.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = space.plist; sourceTree = "<group>"; };
 		2CBD21651730AB6C008916ED /* best.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = best.plist; sourceTree = "<group>"; };
-		2CBD21671730AB7A008916ED /* worst.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = worst.plist; path = ../worst.plist; sourceTree = "<group>"; };
 		2CDECCF1174C83EA004E2CC7 /* description.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = description.plist; sourceTree = "<group>"; };
+		2CE7E07C177A93ED00EA1FAD /* worst.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worst.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +71,6 @@
 			files = (
 				2C2AE9BB17576C8F0019DFCA /* libz.dylib in Frameworks */,
 				2C2AE9B917576C800019DFCA /* SystemConfiguration.framework in Frameworks */,
-				2C2AE9B717576C760019DFCA /* CoreTelephony.framework in Frameworks */,
 				2C4D8EB51724C3A70033412F /* UIKit.framework in Frameworks */,
 				2C4D8EB71724C3A70033412F /* Foundation.framework in Frameworks */,
 				2C4D8EB91724C3A70033412F /* CoreGraphics.framework in Frameworks */,
@@ -88,7 +85,6 @@
 			children = (
 				2C2AE9BA17576C8F0019DFCA /* libz.dylib */,
 				2C2AE9B817576C800019DFCA /* SystemConfiguration.framework */,
-				2C2AE9B617576C760019DFCA /* CoreTelephony.framework */,
 				2C4D8EBA1724C3A70033412F /* algorithms */,
 				2C4D8EB31724C3A70033412F /* Frameworks */,
 				2C4D8EB21724C3A70033412F /* Products */,
@@ -135,7 +131,7 @@
 				2CDECCF1174C83EA004E2CC7 /* description.plist */,
 				2C5195A81749385E00B95DD7 /* icon_114.png */,
 				2C5195A61749385200B95DD7 /* icon_57.png */,
-				2CBD21671730AB7A008916ED /* worst.plist */,
+				2CE7E07C177A93ED00EA1FAD /* worst.plist */,
 				2CBD21651730AB6C008916ED /* best.plist */,
 				2C4D8EBC1724C3A80033412F /* algorithms-Info.plist */,
 				2C4D8EBD1724C3A80033412F /* InfoPlist.strings */,
@@ -211,11 +207,11 @@
 				2C4D8EDE1724F3D90033412F /* sorts.plist in Resources */,
 				2C4DBA0B17306F2200AC30FF /* average.plist in Resources */,
 				2CBD21661730AB6C008916ED /* best.plist in Resources */,
-				2CBD21681730AB7A008916ED /* worst.plist in Resources */,
 				2C5195A71749385200B95DD7 /* icon_57.png in Resources */,
 				2C5195A91749385E00B95DD7 /* icon_114.png in Resources */,
 				2C7CFF0E174C66310091862A /* space.plist in Resources */,
 				2CDECCF2174C83EA004E2CC7 /* description.plist in Resources */,
+				2CE7E07D177A93ED00EA1FAD /* worst.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +271,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -290,6 +287,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,7 +306,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -315,6 +315,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -332,6 +334,7 @@
 				GCC_PREFIX_HEADER = "algorithms/algorithms-Prefix.pch";
 				INFOPLIST_FILE = "algorithms/algorithms-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -347,6 +350,7 @@
 				GCC_PREFIX_HEADER = "algorithms/algorithms-Prefix.pch";
 				INFOPLIST_FILE = "algorithms/algorithms-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
