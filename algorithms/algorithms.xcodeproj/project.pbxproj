@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C00851317858B660066E4D0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00851217858B660066E4D0 /* Default.png */; };
+		2C00851517858D060066E4D0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00851417858D060066E4D0 /* Default-568h@2x.png */; };
+		2C00851717858DBE0066E4D0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00851617858DBE0066E4D0 /* Default@2x.png */; };
 		2C2AE9B917576C800019DFCA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2AE9B817576C800019DFCA /* SystemConfiguration.framework */; };
 		2C2AE9BB17576C8F0019DFCA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2AE9BA17576C8F0019DFCA /* libz.dylib */; };
 		2C4D8EB51724C3A70033412F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4D8EB41724C3A70033412F /* UIKit.framework */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C00851217858B660066E4D0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2C00851417858D060066E4D0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2C00851617858DBE0066E4D0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2C2AE9B817576C800019DFCA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2C2AE9BA17576C8F0019DFCA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2C4D8EB11724C3A70033412F /* algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +89,9 @@
 		2C4D8EA81724C3A70033412F = {
 			isa = PBXGroup;
 			children = (
+				2C00851617858DBE0066E4D0 /* Default@2x.png */,
+				2C00851417858D060066E4D0 /* Default-568h@2x.png */,
+				2C00851217858B660066E4D0 /* Default.png */,
 				2C2AE9BA17576C8F0019DFCA /* libz.dylib */,
 				2C2AE9B817576C800019DFCA /* SystemConfiguration.framework */,
 				2C4D8EBA1724C3A70033412F /* algorithms */,
@@ -212,6 +221,9 @@
 				2C7CFF0E174C66310091862A /* space.plist in Resources */,
 				2CDECCF2174C83EA004E2CC7 /* description.plist in Resources */,
 				2CE7E07D177A93ED00EA1FAD /* worst.plist in Resources */,
+				2C00851317858B660066E4D0 /* Default.png in Resources */,
+				2C00851517858D060066E4D0 /* Default-568h@2x.png in Resources */,
+				2C00851717858DBE0066E4D0 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
