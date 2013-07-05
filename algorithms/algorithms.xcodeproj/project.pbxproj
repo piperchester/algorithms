@@ -27,6 +27,7 @@
 		2C7CFF0E174C66310091862A /* space.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CFF0D174C66310091862A /* space.plist */; };
 		2C8D41B51785919E00E9C0C5 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D41B41785919E00E9C0C5 /* icon_57.png */; };
 		2C8D41B7178591AA00E9C0C5 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D41B6178591AA00E9C0C5 /* icon_114.png */; };
+		2CA5ED841785DA8600FE1384 /* launch-iPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5ED831785DA8600FE1384 /* launch-iPhone5.png */; };
 		2CBD21661730AB6C008916ED /* best.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD21651730AB6C008916ED /* best.plist */; };
 		2CDECCF2174C83EA004E2CC7 /* description.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CDECCF1174C83EA004E2CC7 /* description.plist */; };
 		2CE7E07D177A93ED00EA1FAD /* worst.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE7E07C177A93ED00EA1FAD /* worst.plist */; };
@@ -38,7 +39,7 @@
 		2C00851617858DBE0066E4D0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2C2AE9B817576C800019DFCA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2C2AE9BA17576C8F0019DFCA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		2C4D8EB11724C3A70033412F /* algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4D8EB11724C3A70033412F /* Sorts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sorts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4D8EB41724C3A70033412F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2C4D8EB61724C3A70033412F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2C4D8EB81724C3A70033412F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +60,7 @@
 		2C7CFF0D174C66310091862A /* space.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = space.plist; sourceTree = "<group>"; };
 		2C8D41B41785919E00E9C0C5 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
 		2C8D41B6178591AA00E9C0C5 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
+		2CA5ED831785DA8600FE1384 /* launch-iPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-iPhone5.png"; sourceTree = "<group>"; };
 		2CBD21651730AB6C008916ED /* best.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = best.plist; sourceTree = "<group>"; };
 		2CDECCF1174C83EA004E2CC7 /* description.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = description.plist; sourceTree = "<group>"; };
 		2CE7E07C177A93ED00EA1FAD /* worst.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worst.plist; sourceTree = "<group>"; };
@@ -98,7 +100,7 @@
 		2C4D8EB21724C3A70033412F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C4D8EB11724C3A70033412F /* algorithms.app */,
+				2C4D8EB11724C3A70033412F /* Sorts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +122,7 @@
 				2C4D8EC31724C3A80033412F /* AppDelegate.h */,
 				2C4D8EC41724C3A80033412F /* AppDelegate.m */,
 				2C4D8ECC1724C3A80033412F /* MainStoryboard_iPhone.storyboard */,
+				2CA5ED831785DA8600FE1384 /* launch-iPhone5.png */,
 				2C4D8ECF1724C3A80033412F /* MainStoryboard_iPad.storyboard */,
 				2C4D8ED21724C3A80033412F /* MasterViewController.h */,
 				2C4D8ED31724C3A80033412F /* MasterViewController.m */,
@@ -164,7 +167,7 @@
 			);
 			name = Sorts;
 			productName = algorithms;
-			productReference = 2C4D8EB11724C3A70033412F /* algorithms.app */;
+			productReference = 2C4D8EB11724C3A70033412F /* Sorts.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,6 +215,7 @@
 				2C00851717858DBE0066E4D0 /* Default@2x.png in Resources */,
 				2C8D41B51785919E00E9C0C5 /* icon_57.png in Resources */,
 				2C8D41B7178591AA00E9C0C5 /* icon_114.png in Resources */,
+				2CA5ED841785DA8600FE1384 /* launch-iPhone5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

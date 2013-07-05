@@ -81,13 +81,18 @@
     CGRect descriptionFrame = descriptionText.frame;
     descriptionFrame.size.height = descriptionText.contentSize.height;
     descriptionFrame.size.width = descriptionText.contentSize.width;
-    descriptionText.frame = descriptionFrame;}
+    descriptionText.frame = descriptionFrame;
+}
+
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self configureView];
     self.hidesBottomBarWhenPushed = NO;
+    
+    [super setHidesBottomBarWhenPushed:YES];
 }
 
 - (void)didReceiveMemoryWarning

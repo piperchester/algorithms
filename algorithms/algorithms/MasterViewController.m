@@ -10,7 +10,8 @@
 
 #import "DetailViewController.h"
 
-@interface MasterViewController () {
+@interface MasterViewController ()
+{
     NSMutableArray *sorts;
 }
 @end
@@ -41,6 +42,8 @@
             [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
     }
+    
+    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
 }
 
 #pragma mark - Table View
