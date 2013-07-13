@@ -3,6 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>Binary Search</key>
-	<string>Testing...</string>
+	<string>Must be sorted to use. Picks an element in the middle of the set, if the element is greater than the desired element, remove the upper half. Repeat.</string>
+	<key>Backtracking</key>
+	<string>A general purpose algorithm (metaheuristic) that&apos;s used in DFS to exhaust one path completely before returning to the root.</string>
+	<key>Breadth-First</key>
+	<string>Checks each branch from the current node, before attending to the left most branch of the root node.</string>
+	<key>Depth-First</key>
+	<string>Implements backtracking to exhaust one route completely before returning to the previous node.</string>
+	<key>Brute-Force</key>
+	<string>A heuristic used to linearly check every element.</string>
 </dict>
 </plist>

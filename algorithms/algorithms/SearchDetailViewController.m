@@ -30,21 +30,23 @@
 
 - (void)configureView
 {
+    
+    NSString *descriptionPlistPath = [[NSBundle mainBundle] pathForResource:@"search-description" ofType:@"plist"];
+    descriptionDictionary = [NSDictionary dictionaryWithContentsOfFile:descriptionPlistPath];
+    
     if (_detailItem) {
         self.title = [_detailItem description];
+        [self configureImage:[_detailItem description]];
     }
     
-    NSString *descriptionPlistPath = [[NSBundle mainBundle] pathForResource:@"description" ofType:@"plist"];
-    descriptionDictionary = [NSDictionary dictionaryWithContentsOfFile:descriptionPlistPath];
+
     
     descriptionText = [[UITextView alloc] initWithFrame:CGRectMake(0, 20, 320, 50)];
     [descriptionText setBackgroundColor:[UIColor clearColor]];
     [descriptionText setFont:[UIFont systemFontOfSize:20]];
-    descriptionText.editable = NO;
-    descriptionText.scrollEnabled = NO;
-    descriptionText.allowsEditingTextAttributes = NO;
+    descriptionText.userInteractionEnabled = NO;
     descriptionText.text = [descriptionDictionary objectForKey:[self.detailItem description]];
-    descriptionText.hidden = false;
+    descriptionText.hidden = NO;
     descriptionText.textAlignment = NSTextAlignmentCenter;
     descriptionText.text = [descriptionDictionary objectForKey:[self.detailItem description]];
     [[self view] addSubview:descriptionText];
@@ -89,6 +91,12 @@
 {
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
+}
+
+- (void)configureImage:(NSString *)imageName
+{
+    imageName = [imageName stringByAppendingFormat:@".png"];
+    [self.searchImageView setImage:[UIImage imageNamed:imageName]];
 }
 
 @end

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <array>
 	<string>Binary Search</string>
-	<string>Depth-First </string>
+	<string>Depth-First</string>
 	<string>Breadth-First</string>
 	<string>Brute-Force</string>
 	<string>Backtracking</string>

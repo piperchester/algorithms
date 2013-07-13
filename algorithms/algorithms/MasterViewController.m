@@ -32,7 +32,7 @@
     NSArray *sortsArray = [NSArray arrayWithContentsOfFile:sortsPlistPath];
     
     if (!sorts) {
-        sorts = [[NSMutableArray alloc] init];
+        sorts = [NSMutableArray new];
         for (int i = 0; i < sortsArray.count; i++){
             [sorts insertObject:sortsArray[i] atIndex:i];
             NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
