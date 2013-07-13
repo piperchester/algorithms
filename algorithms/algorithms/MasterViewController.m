@@ -8,10 +8,7 @@
 
 #import "MasterViewController.h"
 
-#import "DetailViewController.h"
-
-@interface MasterViewController ()
-{
+@interface MasterViewController () {
     NSMutableArray *sorts;
 }
 @end

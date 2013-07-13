@@ -10,14 +10,12 @@
 
 @interface AppDelegate()
 
-@property (nonatomic, strong) IBOutlet UITabBarController *myTabBarController;
-
 @end
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];

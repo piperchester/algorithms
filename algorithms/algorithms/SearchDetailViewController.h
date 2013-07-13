@@ -6,20 +6,17 @@
 //  Copyright (c) 2013 Piper Chester. All rights reserved.
 //
 
+#import "SearchMasterViewController.h"
 #import <UIKit/UIKit.h>
 
 @interface SearchDetailViewController : UIViewController<UISplitViewControllerDelegate> {
-    UITextView* runtimeText;
-    UITextView* descriptionText;
-    NSDictionary* averageDictionary;
-    NSDictionary* bestDictionary;
-    NSDictionary* worstDictionary;
-    NSDictionary* spaceDictionary;
-    NSDictionary* descriptionDictionary;
+    UITextView  *descriptionText;
+    NSDictionary *descriptionDictionary;
 }
 
 @property (strong, nonatomic) id detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
-- (IBAction)changeRuntime:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *searchImageView;
+@property (strong, nonatomic) UIPopoverController *masterPopoverController;
 
 @end

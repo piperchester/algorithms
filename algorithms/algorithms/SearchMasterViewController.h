@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchMasterViewController : UITableViewController
+@class SearchDetailViewController; // Used to break circular depedencies. 
+
+@interface SearchMasterViewController : UITableViewController {
+    NSMutableArray *searches;
+}
+
+@property (strong, nonatomic) SearchDetailViewController *searchDetailViewController;
 
 @end

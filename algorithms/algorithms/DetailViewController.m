@@ -29,49 +29,36 @@
     }
 }
 
+- (NSString *)configurePath:(NSString *)filename
+{
+    NSString *pathString = [NSString new];
+    return pathString = [[NSBundle mainBundle]pathForResource:filename ofType:@"plist"];
+}
+
 - (void)configureView
 {
     if (self.detailItem) {
         self.title = [self.detailItem description];
     }
     
-    NSString *averagePlistPath = [[NSBundle mainBundle] pathForResource:@"average" ofType:@"plist"];
-    averageDictionary = [NSDictionary dictionaryWithContentsOfFile:averagePlistPath];
-    
-    NSString *bestPlistPath = [[NSBundle mainBundle] pathForResource:@"best" ofType:@"plist"];
-    bestDictionary = [NSDictionary dictionaryWithContentsOfFile:bestPlistPath];
-    
-    NSString *worstPlistPath = [[NSBundle mainBundle] pathForResource:@"worst" ofType:@"plist"];
-    worstDictionary = [NSDictionary dictionaryWithContentsOfFile:worstPlistPath];
-    
-    NSString *spacePlistPath = [[NSBundle mainBundle] pathForResource:@"space" ofType:@"plist"];
-    spaceDictionary = [NSDictionary dictionaryWithContentsOfFile:spacePlistPath];
-    
-    NSString *descriptionPlistPath = [[NSBundle mainBundle] pathForResource:@"description" ofType:@"plist"];
-    descriptionDictionary = [NSDictionary dictionaryWithContentsOfFile:descriptionPlistPath];
-    
     runtimeText = [[UITextView alloc] initWithFrame:CGRectMake(0, 140, 320, 50)];
     [runtimeText setBackgroundColor:[UIColor clearColor]];
     [runtimeText setFont:[UIFont boldSystemFontOfSize:75]];
-    runtimeText.editable = NO;
-    runtimeText.scrollEnabled = NO;
-    runtimeText.allowsEditingTextAttributes = NO;
+    runtimeText.userInteractionEnabled = NO;
     runtimeText.text = [averageDictionary objectForKey:[self.detailItem description]];
-    runtimeText.hidden = true;
+    runtimeText.hidden = YES;
     runtimeText.textAlignment = NSTextAlignmentCenter;
-    [[self view] addSubview:runtimeText];
+    [self.view addSubview:runtimeText];
     
     descriptionText = [[UITextView alloc] initWithFrame:CGRectMake(0, 20, 320, 50)];
-    [descriptionText setBackgroundColor:[UIColor clearColor]];
-    [descriptionText setFont:[UIFont systemFontOfSize:20]];
-    descriptionText.editable = NO;
-    descriptionText.scrollEnabled = NO;
-    descriptionText.allowsEditingTextAttributes = NO;
+    descriptionText.backgroundColor = [UIColor clearColor];
+    descriptionText.font = [UIFont systemFontOfSize:20];
+    descriptionText.userInteractionEnabled = NO;
     descriptionText.text = [descriptionDictionary objectForKey:[self.detailItem description]];
-    descriptionText.hidden = false;
+    descriptionText.hidden = NO;
     descriptionText.textAlignment = NSTextAlignmentCenter;
     descriptionText.text = [descriptionDictionary objectForKey:[self.detailItem description]];
-    [[self view] addSubview:descriptionText];
+    [self.view addSubview:descriptionText];
     
     CGRect runtimeFrame = runtimeText.frame;
     runtimeFrame.size.height = runtimeText.contentSize.height;
@@ -90,9 +77,14 @@
 {
     [super viewDidLoad];
     [self configureView];
-    self.hidesBottomBarWhenPushed = NO;
     
     [super setHidesBottomBarWhenPushed:YES];
+    
+    averageDictionary = [NSDictionary dictionaryWithContentsOfFile:[self configurePath:@"average"]];
+    bestDictionary = [NSDictionary dictionaryWithContentsOfFile:[self configurePath:@"best"]];
+    worstDictionary = [NSDictionary dictionaryWithContentsOfFile:[self configurePath:@"worst"]];
+    spaceDictionary = [NSDictionary dictionaryWithContentsOfFile:[self configurePath:@"space"]];
+    descriptionDictionary = [NSDictionary dictionaryWithContentsOfFile:[self configurePath:@"description"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -124,15 +116,21 @@
 
 - (IBAction)changeRuntime:(id)sender
 {
-    runtimeText.hidden = false;
-    if (((UISegmentedControl *)sender).selectedSegmentIndex == 0){
-        runtimeText.text = [bestDictionary objectForKey:[self.detailItem description]];
-    } else if (((UISegmentedControl *)sender).selectedSegmentIndex == 1){
-        runtimeText.text = [averageDictionary objectForKey:[self.detailItem description]];
-    } else if (((UISegmentedControl *)sender).selectedSegmentIndex == 2){
-        runtimeText.text = [worstDictionary objectForKey:[self.detailItem description]];
-    } else {
-        runtimeText.text = [spaceDictionary objectForKey:[self.detailItem description]];
+    runtimeText.hidden = NO;
+    
+    switch (((UISegmentedControl *)sender).selectedSegmentIndex) {
+        case 0:
+            runtimeText.text = [bestDictionary objectForKey:[self.detailItem description]];
+            break;
+        case 1:
+            runtimeText.text = [averageDictionary objectForKey:[self.detailItem description]];
+            break;
+        case 2:
+            runtimeText.text = [worstDictionary objectForKey:[self.detailItem description]];
+            break;
+        default:
+            runtimeText.text = [spaceDictionary objectForKey:[self.detailItem description]];
+            break;
     }
 }
 @end

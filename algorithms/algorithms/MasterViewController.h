@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Piper Chester. All rights reserved.
 //
 
+#import "DetailViewController.h"
 #import <UIKit/UIKit.h>
 
 @class DetailViewController;

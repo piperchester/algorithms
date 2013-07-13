@@ -6,12 +6,9 @@
 //  Copyright (c) 2013 Piper Chester. All rights reserved.
 //
 
-#import "SearchMasterViewController.h"
+#import "SearchDetailViewController.h"
 
 @interface SearchMasterViewController ()
-{
-    NSMutableArray *searches;
-}
 
 @end
 
@@ -84,22 +81,22 @@
     }
 }
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath
-//                 :(NSIndexPath *)indexPath
-//{
-//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-//        NSDate *object = searches[indexPath.row];
-//        self.detailViewController.detailItem = object;
-//    }
-//}
-//
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//        NSDate *object = searches[indexPath.row];
-//        [[segue destinationViewController] setDetailItem:object]; // Displays the next menu
-//    }
-//}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath
+                 :(NSIndexPath *)indexPath
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        NSDate *object = searches[indexPath.row];
+        _searchDetailViewController.detailItem = object;
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showSearchDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSDate *object = searches[indexPath.row];
+        [[segue destinationViewController] setDetailItem:object]; // Displays the next menu
+    }
+}
 
 @end

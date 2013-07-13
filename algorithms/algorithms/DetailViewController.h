@@ -9,13 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate> {
-    UITextView* runtimeText;
-    UITextView* descriptionText;
-    NSDictionary* averageDictionary;
-    NSDictionary* bestDictionary;
-    NSDictionary* worstDictionary;
-    NSDictionary* spaceDictionary;
-    NSDictionary* descriptionDictionary;
+    UITextView *runtimeText, *descriptionText;
+    NSDictionary *averageDictionary, *bestDictionary, *worstDictionary, *spaceDictionary, *descriptionDictionary;
 }
 
 @property (strong, nonatomic) id detailItem;
