@@ -225,15 +225,15 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BFS.png" translatesAutoresizingMaskIntoConstraints="NO" id="UPK-fC-lgM">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="196" id="Pzx-aU-cw4"/>
-                                    <constraint firstAttribute="width" constant="251" id="sRW-eH-f4c"/>
+                                    <constraint firstAttribute="width" constant="297" id="X0D-5P-nik"/>
+                                    <constraint firstAttribute="height" constant="297" id="uTa-jm-Hq3"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UPK-fC-lgM" firstAttribute="centerX" secondItem="843-Ad-7k6" secondAttribute="centerX" type="default" id="GZy-VG-fBl"/>
-                            <constraint firstItem="UPK-fC-lgM" firstAttribute="top" secondItem="843-Ad-7k6" secondAttribute="top" constant="165" id="JIJ-vJ-kFa"/>
+                            <constraint firstItem="UPK-fC-lgM" firstAttribute="top" secondItem="843-Ad-7k6" secondAttribute="top" constant="149" id="e1S-xp-O3y"/>
+                            <constraint firstItem="UPK-fC-lgM" firstAttribute="centerX" secondItem="843-Ad-7k6" secondAttribute="centerX" type="default" id="iOS-He-Fqg"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -253,6 +253,31 @@
         <image name="launch-iPhone5.png" width="640" height="1136"/>
         <image name="tab" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changeRuntime:"/>
+                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SearchDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="searchImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="SearchMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchMasterViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

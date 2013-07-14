@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Binary Search</key>
-	<string>Must be sorted to use. Picks an element in the middle of the set, if the element is greater than the desired element, remove the upper half. Repeat.</string>
+	<string>A sorted set is divided and conquered by picking an element in the middle of the set and removing elements greater or less than the target.</string>
 	<key>Backtracking</key>
 	<string>A general purpose algorithm (metaheuristic) that&apos;s used in DFS to exhaust one path completely before returning to the root.</string>
 	<key>Breadth-First</key>

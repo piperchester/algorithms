@@ -28,12 +28,12 @@
 		2C5193A9178A139B0062A0D7 /* SearchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5193A8178A139B0062A0D7 /* SearchDetailViewController.m */; };
 		2C5193AB178A15040062A0D7 /* searches.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C5193AA178A15040062A0D7 /* searches.plist */; };
 		2C7CFF0E174C66310091862A /* space.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CFF0D174C66310091862A /* space.plist */; };
+		2C84182E1792267000274BB2 /* Binary Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C84182D1792267000274BB2 /* Binary Search.png */; };
 		2C8D41B51785919E00E9C0C5 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D41B41785919E00E9C0C5 /* icon_57.png */; };
 		2C8D41B7178591AA00E9C0C5 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D41B6178591AA00E9C0C5 /* icon_114.png */; };
 		2CA3EC881790CECF009C08A4 /* Breadth-First.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA3EC871790CECF009C08A4 /* Breadth-First.png */; };
 		2CA3EC8A1790D142009C08A4 /* search-description.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CA3EC891790D141009C08A4 /* search-description.plist */; };
 		2CA3EC8C1790E6FF009C08A4 /* Depth-First.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA3EC8B1790E6FF009C08A4 /* Depth-First.png */; };
-		2CA3EC8E179185BC009C08A4 /* Binary Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA3EC8D179185BC009C08A4 /* Binary Search.png */; };
 		2CA3EC9117918AA6009C08A4 /* Backtracking.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA3EC8F17918AA6009C08A4 /* Backtracking.png */; };
 		2CA3EC9217918AA6009C08A4 /* Brute-Force.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA3EC9017918AA6009C08A4 /* Brute-Force.png */; };
 		2CA5ED841785DA8600FE1384 /* launch-iPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5ED831785DA8600FE1384 /* launch-iPhone5.png */; };
@@ -72,12 +72,12 @@
 		2C5193A8178A139B0062A0D7 /* SearchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDetailViewController.m; sourceTree = "<group>"; };
 		2C5193AA178A15040062A0D7 /* searches.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = searches.plist; sourceTree = "<group>"; };
 		2C7CFF0D174C66310091862A /* space.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = space.plist; sourceTree = "<group>"; };
+		2C84182D1792267000274BB2 /* Binary Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Binary Search.png"; path = "algorithms/Binary Search.png"; sourceTree = "<group>"; };
 		2C8D41B41785919E00E9C0C5 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
 		2C8D41B6178591AA00E9C0C5 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
 		2CA3EC871790CECF009C08A4 /* Breadth-First.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Breadth-First.png"; path = "algorithms/Breadth-First.png"; sourceTree = "<group>"; };
 		2CA3EC891790D141009C08A4 /* search-description.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "search-description.plist"; sourceTree = "<group>"; };
 		2CA3EC8B1790E6FF009C08A4 /* Depth-First.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Depth-First.png"; path = "algorithms/Depth-First.png"; sourceTree = "<group>"; };
-		2CA3EC8D179185BC009C08A4 /* Binary Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Binary Search.png"; path = "algorithms/Binary Search.png"; sourceTree = "<group>"; };
 		2CA3EC8F17918AA6009C08A4 /* Backtracking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Backtracking.png; path = algorithms/Backtracking.png; sourceTree = "<group>"; };
 		2CA3EC9017918AA6009C08A4 /* Brute-Force.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Brute-Force.png"; path = "algorithms/Brute-Force.png"; sourceTree = "<group>"; };
 		2CA5ED831785DA8600FE1384 /* launch-iPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch-iPhone5.png"; path = "algorithms/launch-iPhone5.png"; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		2C51939F178A111D0062A0D7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				2CA3EC8D179185BC009C08A4 /* Binary Search.png */,
+				2C84182D1792267000274BB2 /* Binary Search.png */,
 				2CA3EC8F17918AA6009C08A4 /* Backtracking.png */,
 				2CA3EC9017918AA6009C08A4 /* Brute-Force.png */,
 				2CA3EC8B1790E6FF009C08A4 /* Depth-First.png */,
@@ -284,9 +284,9 @@
 				2CA3EC881790CECF009C08A4 /* Breadth-First.png in Resources */,
 				2CA3EC8A1790D142009C08A4 /* search-description.plist in Resources */,
 				2CA3EC8C1790E6FF009C08A4 /* Depth-First.png in Resources */,
-				2CA3EC8E179185BC009C08A4 /* Binary Search.png in Resources */,
 				2CA3EC9117918AA6009C08A4 /* Backtracking.png in Resources */,
 				2CA3EC9217918AA6009C08A4 /* Brute-Force.png in Resources */,
+				2C84182E1792267000274BB2 /* Binary Search.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
